@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REKOM™ — About Us</title>
+
+  <link rel="icon" href="assets/img/favicon.ico">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Styles després de Boostrap (per sobreescriure correctament) -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Model-Viewer (no passa res si aquesta pàgina no el fa servir) -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "REKOM",
+    "image": "",
+    "@id": "",
+    "url": "https://www.rekom.es/home",
+    "telephone": "+34 977207089",
+    "priceRange": "€100 - €160",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer del Duc, 7, Ciutat Vella",
+      "addressLocality": "Barcelona",
+      "postalCode": "08002",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.3841269,
+      "longitude": 2.1732635
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "11:00",
+      "closes": "21:00"
+    },
+    "sameAs": [
+      "https://www.linkREKOM.es",
+      "https://www.linkREKOM.es",
+      "https://www.linkREKOM.es"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Menú hamburguesa -->
+      <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open's menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Logo -->
+      <a class="navbar-brand m-0 position-absolute start-50 translate-middle-x" href="index.html">
+        <img class="brand-mark" src="assets/img/logo.png" alt="REKOM">
+      </a>
+
+      <!-- Icones -->
+      <div class="d-flex align-items-center gap-3 order-1">
+
+        <button class="nav-icon btn p-0" id="open-search" aria-label="Search" type="button">
+          <i class="bi bi-search"></i>
+        </button>
+
+        <a class="nav-icon" href="account.html" aria-label="Account">
+          <i class="bi bi-person"></i>
+        </a>
+
+        <a class="nav-icon" href="#" aria-label="Cart">
+          <i class="bi bi-cart3"></i>
+        </a>
+      </div>
+
+      <!-- Enllaços de navegació -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav me-auto mt-3 mt-lg-0 gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about_us.html">ABOUT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BARRA DE CERCA -->
+  <div id="search-bar" class="search-wrapper d-none">
+    <div class="container d-flex justify-content-center">
+      <input type="text" class="form-control search-input" placeholder="Search...">
+    </div>
+  </div>
+
+  <!-- CONTINGUT PRINCIPAL DE LA PÀGINA -->
+  <main class="py-5">
+    <div class="container">
+      <!-- 👉 Aquí poses el contingut específic de cada pàgina (contacte, about, legal...) -->
+      <h1 class="mb-4">Page title</h1>
+      <p>Page content goes here…</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer pt-5 pb-4" id="contacte">
+    <div class="container text-center">
+
+      <img src="assets/img/logo.png" alt="Logotip REKOM" style="height:28px" onerror="this.remove()">
+
+      <div class="d-flex justify-content-center gap-4 mt-3 social">
+        <a href="#" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+
+      <!-- COLUMNES CENTRADES -->
+      <div class="row justify-content-center mt-4 small text-uppercase text-center">
+        <div class="col-auto">
+          <ul class="list-unstyled m-0">
+            <li class="mb-2"><a href="legal_notice.html">Legal Notice</a></li>
+            <li class="mb-2"><a href="privacy_policy.html">Privacy Policy</a></li>
+            <li class="mb-2"><a href="terms_of_service.html">Terms of Service</a></li>
+            <li class="mb-2"><a href="returns_exchanges.html">Returns &amp; Exchanges</a></li>
+          </ul>
+        </div>
+
+        <div class="col-auto ms-4">
+          <ul class="list-unstyled m-0">
+            <li class="mb-2"><a href="order_tracking.html">Order Tracking</a></li>
+            <li class="mb-2"><a href="faqs.html">FAQs</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <span class="text-white-50 d-block text-center">© 2025 REKOM™</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BACKDROP DEL CARRET -->
+  <div id="cart-backdrop" class="cart-backdrop d-none"></div>
+
+  <!-- CARRET LATERAL -->
+  <aside id="cart-panel" class="cart-panel">
+    <div class="cart-header d-flex justify-content-between align-items-center">
+      <h5 class="m-0">Cart</h5>
+      <button id="cart-close" class="btn btn-sm btn-outline-light px-2 py-1">X</button>
+    </div>
+
+    <div class="cart-body mt-3">
+      <ul id="cart-items" class="list-unstyled m-0"></ul>
+    </div>
+
+    <div class="cart-footer mt-3">
+      <div class="d-flex justify-content-between mb-2">
+        <span>Total:</span>
+        <strong id="cart-total">0.00 €</strong>
+      </div>
+      <button class="btn btn-light w-100">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Barra de cerca -->
+  <script src="js/search.js"></script>
+
+  <!-- Carret -->
+  <script src="js/cart.js"></script>
+
+</body>
+</html>

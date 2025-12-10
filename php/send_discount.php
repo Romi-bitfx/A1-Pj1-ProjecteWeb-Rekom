@@ -1,1 +1,1 @@
-Your form has been sent successfully. Thank you!
+Your discount form has been sent successfully. Thank you!
