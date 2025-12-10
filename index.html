@@ -143,7 +143,7 @@
         <!-- DESUADORA UMBRA -->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card product-card h-100">
-            <div class="media" tabindex="0" aria-label="View of the Umbra hoodie. Press or click to see the back.">
+            <div class="media" tabindex="0">
               <img src="assets/img/hoodies/Umbra_Front.png" class="front" alt="Umbra Hoodie - front view">
               <img src="assets/img/hoodies/Umbra_Back.png"  class="back"  alt="Umbra Hoodie - back view">
             </div>
@@ -164,7 +164,7 @@
         <!-- DESUADORA VENOM -->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card product-card h-100">
-            <div class="media" tabindex="0" aria-label="View of the Venom hoodie. Press or click to see the back.">
+            <div class="media" tabindex="0">
               <img src="assets/img/hoodies/Venom_Front.png" class="front" alt="Venom Hoodie - front view">
               <img src="assets/img/hoodies/Venom_Back.png"  class="back"  alt="Venom Hoodie - back view">
             </div>
@@ -185,7 +185,7 @@
         <!-- DESUADORA ECLIPSE -->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card product-card h-100">
-            <div class="media" tabindex="0" aria-label="View of the Eclipse hoodie. Press or click to see the back.">
+            <div class="media" tabindex="0">
               <img src="assets/img/hoodies/Eclipse_Front.png" class="front" alt="Eclipse Hoodie - front view">
               <img src="assets/img/hoodies/Eclipse_Back.png"  class="back"  alt="Eclipse Hoodie - back view">
             </div>
@@ -206,7 +206,7 @@
         <!-- DESUADORA VOID -->
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card product-card h-100">
-            <div class="media" tabindex="0" aria-label="View of the Void hoodie. Press or click to see the back.">
+            <div class="media" tabindex="0">
               <img src="assets/img/hoodies/Void_Front.png" class="front" alt="Void Hoodie - front view">
               <img src="assets/img/hoodies/Void_Back.png"  class="back"  alt="Void Hoodie - back view">
             </div>
@@ -269,9 +269,38 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Ajustos del model 3D -->
+  <script type="module">
+    const mv = document.getElementById('logo3d');
+
+    if (mv) {
+      mv.addEventListener('load', () => {
+        const model = mv.model;
+        const mats = (model && model.materials) ? model.materials : [];
+        const color = [20 / 255, 0, 93 / 255, 1];
+
+        mats.forEach(m => {
+          const pbr = m.pbrMetallicRoughness;
+          if (!pbr) return;
+          if (typeof pbr.setBaseColorFactor === 'function') {
+            pbr.setBaseColorFactor(color);
+          }
+          if (typeof pbr.setMetallicFactor === 'function') {
+            pbr.setMetallicFactor(1);
+          }
+          if (typeof pbr.setRoughnessFactor === 'function') {
+            pbr.setRoughnessFactor(0);
+          }
+          if ('metallicRoughnessTexture' in m) {
+            m.metallicRoughnessTexture = null;
+          }
+        });
+      });
+    }
+  </script>
 
 </body>
-
 </html>
