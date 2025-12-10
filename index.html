@@ -158,14 +158,17 @@
               <p class="card-text price">119,95 €</p>
 
                 <div class="size-buttons d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-outline-light flex-fill">S - M</button>
-                  <button class="btn btn-sm btn-outline-light flex-fill">L - XL</button>
+                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="S - M">S - M</button>
+                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="L - XL">L - XL</button>
                 </div>
 
-              <a href="#" class="btn btn-outline-light w-100">Add to cart</a>
+                <a href="#" class="btn btn-outline-light w-100 add-to-cart" data-product="Umbra" data-price="119.95">
+                  Add to cart
+                </a>
             </div>
           </div>
         </div>
+
 
         <!-- DESUADORA VENOM -->
         <div class="col-12 col-sm-6 col-lg-3">
@@ -179,11 +182,13 @@
               <p class="card-text price">119,95 €</p>
 
                 <div class="size-buttons d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-outline-light flex-fill">S - M</button>
-                  <button class="btn btn-sm btn-outline-light flex-fill">L - XL</button>
+                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="S - M">S - M</button>
+                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="L - XL">L - XL</button>
                 </div>
 
-              <a href="#" class="btn btn-outline-light w-100">Add to cart</a>
+                <a href="#" class="btn btn-outline-light w-100 add-to-cart" data-product="Venom" data-price="119.95">
+                  Add to cart
+                </a>
             </div>
           </div>
         </div>
@@ -200,11 +205,13 @@
               <p class="card-text price">119,95 €</p>
 
                 <div class="size-buttons d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-outline-light flex-fill">S - M</button>
-                  <button class="btn btn-sm btn-outline-light flex-fill">L - XL</button>
+                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="S - M">S - M</button>
+                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="L - XL">L - XL</button>
                 </div>
 
-              <a href="#" class="btn btn-outline-light w-100">Add to cart</a>
+                <a href="#" class="btn btn-outline-light w-100 add-to-cart" data-product="Eclipse" data-price="119.95">
+                  Add to cart
+                </a>
             </div>
           </div>
         </div>
@@ -221,15 +228,16 @@
               <p class="card-text price">119,95 €</p>
 
                 <div class="size-buttons d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-outline-light flex-fill">S - M</button>
-                  <button class="btn btn-sm btn-outline-light flex-fill">L - XL</button>
+                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="S - M">S - M</button>
+                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="L - XL">L - XL</button>
                 </div>
 
-              <a href="#" class="btn btn-outline-light w-100">Add to cart</a>
+                <a href="#" class="btn btn-outline-light w-100 add-to-cart" data-product="Void" data-price="119.95">
+                  Add to cart
+                </a>
             </div>
           </div>
         </div>
-      </div>
 
     </div>
   </section>
@@ -274,6 +282,29 @@
 
     </div>
   </footer>
+
+<!-- BACKDROP DEL CARRET -->
+<div id="cart-backdrop" class="cart-backdrop d-none"></div>
+
+<!-- CARRET -->
+<aside id="cart-panel" class="cart-panel">
+  <div class="cart-header d-flex justify-content-between align-items-center">
+    <h5 class="m-0">Cart</h5>
+    <button id="cart-close" class="btn btn-sm btn-outline-light px-2 py-1">X</button>
+  </div>
+
+  <div class="cart-body mt-3">
+    <ul id="cart-items" class="list-unstyled m-0"></ul>
+  </div>
+
+  <div class="cart-footer mt-3">
+    <div class="d-flex justify-content-between mb-2">
+      <span>Total:</span>
+      <strong id="cart-total">0.00 €</strong>
+    </div>
+    <button class="btn btn-light w-100">Checkout</button>
+  </div>
+</aside>
 
 <!-- POPUP DESCOMPTE 10% -->
 <div id="discount-popup" class="discount-overlay d-none">
@@ -338,6 +369,9 @@
 
 <!-- Barra de cerca -->
 <script src="js/search.js"></script>
+
+<!-- Carret -->
+<script src="js/cart.js"></script>
 
 </body>
 </html>
