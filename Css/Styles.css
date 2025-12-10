@@ -10,7 +10,7 @@ body {
   color: var(--fg);
 }
 
-/* NAVBAR */
+/* === NAVBAR === */
 .navbar-custom {
   background: var(--bg);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -34,7 +34,7 @@ body {
   height: 28px;
 }
 
-/* MÒBIL + TABLET: menú hamburguesa */
+/* Responsive --> MÒBIL + TABLET: menú hamburguesa */
 @media (max-width: 991.98px) {
 
   .navbar-custom {
@@ -122,13 +122,64 @@ body {
 .hero-3d model-viewer {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* fa que OMPLI tot el hero */
+  object-fit: cover; 
   pointer-events: auto;
 }
-
 
 /* Contingut per sobre de tot */
 .hero-content {
   position: relative;
   z-index: 2;
+}
+
+/* TARGETES PRODUCTES */
+.product-card {
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.product-card .media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: #0a0a0a;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.06);
+}
+
+.product-card .media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  transition: opacity 0.35s ease;
+  display: block;
+}
+
+.product-card .card-body {
+  color: #fff;
+}
+
+.product-card .media img.back {
+  opacity: 0;
+}
+
+.product-card:hover .media img.front {
+  opacity: 0;
+}
+
+.product-card:hover .media img.back {
+  opacity: 1;
+}
+
+.product-card .media.show-back img.front {
+  opacity: 0;
+}
+
+.product-card .media.show-back img.back {
+  opacity: 1;
+}
+
+.price {
+  opacity: 0.9;
 }
