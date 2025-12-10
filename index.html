@@ -325,66 +325,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Ajustos del model 3D -->
-  <script type="module">
-    const mv = document.getElementById('logo3d');
-
-    if (mv) {
-      mv.addEventListener('load', () => {
-        const model = mv.model;
-        const mats = (model && model.materials) ? model.materials : [];
-        const color = [20 / 255, 0, 93 / 255, 1];
-
-        mats.forEach(m => {
-          const pbr = m.pbrMetallicRoughness;
-          if (!pbr) return;
-          if (typeof pbr.setBaseColorFactor === 'function') {
-            pbr.setBaseColorFactor(color);
-          }
-          if (typeof pbr.setMetallicFactor === 'function') {
-            pbr.setMetallicFactor(1);
-          }
-          if (typeof pbr.setRoughnessFactor === 'function') {
-            pbr.setRoughnessFactor(0);
-          }
-          if ('metallicRoughnessTexture' in m) {
-            m.metallicRoughnessTexture = null;
-          }
-        });
-      });
-    }
-  </script>
+<script src="js/model3d.js" type="module"></script>
 
 <!-- Ajustos Popup -->
-  <script>
-    window.addEventListener('load', () => {
-      const popup = document.getElementById('discount-popup');
-      const closeButtons = document.querySelectorAll('.discount-close');
-
-      if (!popup) return;
-      popup.classList.remove('d-none'); // Mostrar sempre en carregar
-
-      // Si només el vols 1 cop, fes servir això en lloc de la línia anterior:
-      // if (!localStorage.getItem('rekom_discount_closed')) {
-      //   popup.classList.remove('d-none');
-      // }
-
-      const closePopup = () => {
-        popup.classList.add('d-none');
-        // localStorage.setItem('rekom_discount_closed', '1');
-      };
-
-      closeButtons.forEach(btn =>
-        btn.addEventListener('click', closePopup)
-      );
-
-      // Tancar si cliques fora del popup
-      popup.addEventListener('click', e => {
-        if (e.target === popup) {
-          closePopup();
-        }
-      });
-    });
-  </script>
+<script src="js/popup.js"></script>
 
 </body>
 </html>
