@@ -16,6 +16,10 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.navbar-custom .container {
+  position: relative; /* per poder posicionar el menú desplegable */
+}
+
 .navbar-custom .nav-link {
   color: #eaeaea;
   letter-spacing: 0.04em;
@@ -28,4 +32,103 @@ body {
 
 .brand-mark {
   height: 28px;
+}
+
+/* MÒBIL + TABLET: menú hamburguesa */
+@media (max-width: 991.98px) {
+
+  .navbar-custom {
+    position: relative;
+  }
+
+  .navbar-custom .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background: var(--bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    z-index: 1000;
+    padding: 1.2rem 0;       
+  }
+
+  .navbar-custom .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;               
+    text-align: center;
+  }
+
+  .navbar-custom .nav-link {
+    font-size: 1rem;            
+    padding: 0.4rem 1rem; 
+    letter-spacing: 0.05em;
+  }
+}
+
+/* HERO + FONS 3D + LOGO 3D */
+.hero {
+  position: relative;
+  min-height: clamp(500px, 70vh, 900px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: radial-gradient(
+      80% 60% at 50% 40%,
+      rgba(122, 50, 255, 0.18),
+      rgba(0, 0, 0, 0)
+    ),
+    #050505;
+}
+
+.hero h1 {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.hero p {
+  color: #ddd;
+}
+
+/* Imatge de fons HERO */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+/* Logo 3D */
+.hero-3d {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-3d model-viewer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* fa que OMPLI tot el hero */
+  pointer-events: auto;
+}
+
+
+/* Contingut per sobre de tot */
+.hero-content {
+  position: relative;
+  z-index: 2;
 }
