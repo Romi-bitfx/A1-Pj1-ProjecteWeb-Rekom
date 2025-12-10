@@ -84,6 +84,31 @@ body {
   }
 }
 
+/* Barra de cerca */
+.search-wrapper {
+  background: #000;
+  padding: 1rem 0;
+  animation: fadeDown 0.25s ease-out;
+}
+
+.search-input {
+  max-width: 500px;
+  border: 2px solid rgb(93, 0, 255);
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+}
+
+.search-input::placeholder {
+  color: #7a32ff;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
 /* === HERO + FONS 3D + LOGO 3D === */
 .hero {
   position: relative;
