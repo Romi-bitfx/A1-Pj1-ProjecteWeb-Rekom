@@ -183,3 +183,22 @@ body {
 .price {
   opacity: 0.9;
 }
+
+/* FOOTER */
+.footer {
+  background: linear-gradient(180deg, #000 0%, #14032b 40%, #1f0b4a 100%);
+  color: #e9e9e9;
+}
+
+.footer a {
+  color: #e9e9e9;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  opacity: 0.85;
+}
+
+.footer .social i {
+  font-size: 1.3rem;
+}
