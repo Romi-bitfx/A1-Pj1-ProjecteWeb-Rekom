@@ -21,14 +21,30 @@ body {
 }
 
 .navbar-custom .nav-link {
-  color: #eaeaea;
-  letter-spacing: 0.04em;
+  color: rgba(255,255,255);  
+  transition: color 0.2s ease;    
 }
 
 .navbar-custom .nav-link.active,
 .navbar-custom .nav-link:hover {
-  color: #fff;
+  color: rgb(93, 0, 255);      
 }
+
+/* Color icona navbar hamburguesa */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Color icones navbar */
+.nav-icon i {
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease;
+}
+
+.nav-icon:hover i {
+  color: rgb(93, 0, 255);
+}
+
 
 .brand-mark {
   height: 28px;
@@ -68,7 +84,7 @@ body {
   }
 }
 
-/* HERO + FONS 3D + LOGO 3D */
+/* === HERO + FONS 3D + LOGO 3D === */
 .hero {
   position: relative;
   min-height: clamp(500px, 70vh, 900px);
@@ -132,7 +148,7 @@ body {
   z-index: 2;
 }
 
-/* TARGETES PRODUCTES */
+/* === TARGETES PRODUCTES === */
 .product-card {
   background: #0a0a0a;
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -184,19 +200,19 @@ body {
   opacity: 0.9;
 }
 
-/* FOOTER */
+/* === FOOTER === */
 .footer {
   background: linear-gradient(180deg, #000 0%, #14032b 40%, #1f0b4a 100%);
   color: #e9e9e9;
 }
 
 .footer a {
-  color: #e9e9e9;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .footer a:hover {
-  opacity: 0.85;
+  color: rgb(93, 0, 255);
 }
 
 .footer .social i {
