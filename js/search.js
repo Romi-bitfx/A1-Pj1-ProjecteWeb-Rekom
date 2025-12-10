@@ -1,9 +1,8 @@
-const searchIcon = document.querySelector('.bi-search');
+const searchBtn = document.getElementById('open-search');
 const searchBar = document.getElementById('search-bar');
 
-if (searchIcon && searchBar) {
-  searchIcon.addEventListener('click', (e) => {
-    e.preventDefault(); // evita que pugi amunt per l'anchor
+if (searchBtn && searchBar) {
+  searchBtn.addEventListener('click', () => {
     searchBar.classList.toggle('d-none');
   });
 }
