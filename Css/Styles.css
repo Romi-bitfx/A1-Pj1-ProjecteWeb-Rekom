@@ -218,3 +218,122 @@ body {
 .footer .social i {
   font-size: 1.3rem;
 }
+
+/* === POPUP DESCOMPTE 10% === */
+
+/* Logo popup */
+.popup-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 32px;
+  width: 32px;
+}
+
+/* Imatge del popup */
+.popup-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive imatge popup */
+@media (max-width: 767.98px) {
+  .popup-img {
+    height: 200px;     
+    object-fit: cover;
+  }
+
+  .discount-photo {
+    height: 200px;     
+  }
+}
+
+/* DESKTOP -> imatge gran i completa */
+@media (min-width: 768px) {
+  .discount-photo {
+    height: 100%;   
+  }
+}
+
+/* Part exterior del popup */
+.discount-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Targeta del popup */
+.discount-modal {
+  background: #000;
+  border-radius: 18px;
+  max-width: 960px;
+  width: 100%;
+  min-height: 420px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.9);
+}
+
+/* "Paso de descuentos" (botó de tancar) */
+.discount-close {
+  color: #fff;
+  transition: color 0.25s ease;
+}
+
+.discount-close:hover {
+  color: #7a32ff;
+}
+
+/* FOTO */
+.discount-photo {
+  background: #651fff;
+}
+
+/* Columna FORMULARI */
+.discount-content {
+  background: #000;
+}
+
+/* Inputs del formulari */
+.discount-input {
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid #651fff;
+  color: #ffffff;
+}
+
+.discount-input::placeholder {
+  color: #651fff;
+}
+
+/* Botó principal */
+.discount-btn {
+  background: #651fff;
+  border-radius: 14px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.9rem 1.25rem;
+  letter-spacing: 0.04em;
+  transition: background 0.25s ease;
+}
+
+.discount-btn:hover {
+  background: #8043ff;
+}
+
+/* Responsive: en mòbil les dues columnes una sota l'altra */
+@media (max-width: 767.98px) {
+  .discount-modal {
+    max-width: 100%;
+    min-height: 0;
+  }
+}
