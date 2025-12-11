@@ -500,7 +500,7 @@ body {
   color: var(--soft-purple);
 }
 
-/* --- FOTOS --- */
+/* Fotos */
 .about-images {
   background: var(--pure-black);
   padding-bottom: 4rem;
@@ -552,4 +552,43 @@ body {
     text-align: left;
     padding-left: 0.5rem;
   }
+}
+
+/* === TERMS OF SERVICE === */
+.legal-page a {
+  color: var(--rekom);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.legal-page a:hover {
+  color: var(--soft-purple);
+  text-shadow: 0 0 8px rgba(93, 0, 255, 0.6);
+}
+
+/* === FAQS === */
+.faqs a {
+  color: var(--rekom);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.faqs a:hover {
+  color: var(--soft-purple);
+  opacity: 0.85;
+}
+
+.faqs p a {
+  border-bottom: 1px solid var(--rekom);
+}
+
+.faqs p a:hover {
+  border-bottom-color: var(--soft-purple);
+}
+
+.faqs a.important {
+  font-weight: 700;
+  color: var(--soft-purple);
 }

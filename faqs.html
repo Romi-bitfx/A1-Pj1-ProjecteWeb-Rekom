@@ -113,11 +113,226 @@
   </div>
 
   <!-- CONTINGUT PRINCIPAL DE LA PÀGINA -->
-  <main class="py-5">
-    <div class="container">
-      <!-- 👉 Aquí poses el contingut específic de cada pàgina (contacte, about, legal...) -->
-      <h1 class="mb-4">Page title</h1>
-      <p>Page content goes here…</p>
+  <main class="faqs py-5">
+    <div class="container faq-page">
+      <h1 class="display-4 text-center mb-4">FAQs</h1>
+      <p class="text-center text-white-50 mb-5">
+        Answers to the most common questions about REKOM™ — our hoodies, drops and orders.
+      </p>
+
+      <div class="mx-auto" style="max-width: 900px;">
+
+        <div class="accordion" id="faqAccordion">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item bg-black border-secondary">
+            <h2 class="accordion-header" id="faq-heading-1">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-1"
+                      aria-expanded="false" aria-controls="faq-collapse-1">
+                Are all REKOM hoodies handmade?
+              </button>
+            </h2>
+            <div id="faq-collapse-1" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                Yes. Every hoodie is handcrafted in our personal workshop in Reus (Spain).
+                We cut, print and finish each piece ourselves to keep full control over quality,
+                fit and details. No mass production, no shortcuts.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item bg-black border-secondary mt-2">
+            <h2 class="accordion-header" id="faq-heading-2">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-2"
+                      aria-expanded="false" aria-controls="faq-collapse-2">
+                Are your drops limited?
+              </button>
+            </h2>
+            <div id="faq-collapse-2" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                Yes. REKOM is built around limited runs. Once a hoodie is gone, in most cases
+                it will not be restocked. This keeps each piece more exclusive and aligned with
+                our underground mindset.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item bg-black border-secondary mt-2">
+            <h2 class="accordion-header" id="faq-heading-3">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-3"
+                      aria-expanded="false" aria-controls="faq-collapse-3">
+                How do I choose my size?
+              </button>
+            </h2>
+            <div id="faq-collapse-3" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                Our hoodies are based on a relaxed, urban fit.  
+                We usually group sizes as <strong>S–M</strong> and <strong>L–XL</strong>:
+                <ul>
+                  <li>S–M → recommended if you prefer a more regular or slightly loose fit.</li>
+                  <li>L–XL → ideal if you like it oversized or have a bigger build.</li>
+                </ul>
+                If you're between two options, go for the bigger one for a more streetwear look.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item bg-black border-secondary mt-2">
+            <h2 class="accordion-header" id="faq-heading-4">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-4"
+                      aria-expanded="false" aria-controls="faq-collapse-4">
+                Where do you ship from and to?
+              </button>
+            </h2>
+            <div id="faq-collapse-4" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-4" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                All orders ship from Spain.  
+                The available countries, delivery fees and estimated times are detailed in our
+                <a href="returns_exchanges.html">Shipping & Returns</a> section.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item bg-black border-secondary mt-2">
+            <h2 class="accordion-header" id="faq-heading-5">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-5"
+                      aria-expanded="false" aria-controls="faq-collapse-5">
+                How long will my order take to arrive?
+              </button>
+            </h2>
+            <div id="faq-collapse-5" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-5" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                Delivery time depends on your destination and the shipping method available at checkout.
+                Once shipped, you'll receive tracking information whenever possible.  
+                Keep in mind that external factors (couriers, customs, holidays) may affect delivery times.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="accordion-item bg-black border-secondary mt-2">
+            <h2 class="accordion-header" id="faq-heading-6">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-6"
+                      aria-expanded="false" aria-controls="faq-collapse-6">
+                Can I return or exchange a hoodie?
+              </button>
+            </h2>
+            <div id="faq-collapse-6" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-6" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                Yes, as long as it complies with the conditions in our
+                <a href="returns_exchanges.html">Returns & Exchanges Policy</a>:
+                unworn, in perfect condition and within the stated time frame.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="accordion-item bg-black border-secondary mt-2">
+            <h2 class="accordion-header" id="faq-heading-7">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-7"
+                      aria-expanded="false" aria-controls="faq-collapse-7">
+                How should I care for my REKOM hoodie?
+              </button>
+            </h2>
+            <div id="faq-collapse-7" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-7" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                To keep it sharp for as long as possible:
+                <ul>
+                  <li>Wash inside out, cold or max 30ºC.</li>
+                  <li>Avoid tumble drying when you can.</li>
+                  <li>Do not iron directly over prints.</li>
+                </ul>
+                Treat it like a long-term piece, not a disposable garment.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="accordion-item bg-black border-secondary mt-2">
+            <h2 class="accordion-header" id="faq-heading-8">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-8"
+                      aria-expanded="false" aria-controls="faq-collapse-8">
+                Will sold-out pieces be restocked?
+              </button>
+            </h2>
+            <div id="faq-collapse-8" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-8" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                Usually not. Most REKOM drops are designed as limited runs.  
+                If we ever bring a design back, it will likely be reworked, updated or released in a
+                different version — not a simple reprint.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="accordion-item bg-black border-secondary mt-2">
+            <h2 class="accordion-header" id="faq-heading-9">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-9"
+                      aria-expanded="false" aria-controls="faq-collapse-9">
+                Which payment methods do you accept?
+              </button>
+            </h2>
+            <div id="faq-collapse-9" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-9" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                We accept the secure payment methods available at checkout (such as major debit/credit cards
+                and other digital payments, depending on your region).  
+                All payments are processed through trusted providers using encrypted connections.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="accordion-item bg-black border-secondary mt-2">
+            <h2 class="accordion-header" id="faq-heading-10">
+              <button class="accordion-button collapsed bg-black text-white" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq-collapse-10"
+                      aria-expanded="false" aria-controls="faq-collapse-10">
+                I still have questions. How can I contact you?
+              </button>
+            </h2>
+            <div id="faq-collapse-10" class="accordion-collapse collapse"
+                 role="region"
+                 aria-labelledby="faq-heading-10" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-white-50">
+                You can reach us through the form on our <a href="contact.html">Contact</a> page or via the
+                channels listed there. We’ll get back to you as soon as possible.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   </main>
 
