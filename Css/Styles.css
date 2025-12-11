@@ -592,3 +592,336 @@ body {
   font-weight: 700;
   color: var(--soft-purple);
 }
+
+/* === ACCOUNT === */
+.account-page {
+  background: #000; /* assegurem fons negre pur */
+  min-height: calc(100vh - 140px); /* espai per navbar + footer */
+}
+
+/* Targeta central */
+.auth-card {
+  background: rgba(5, 5, 5, 0.98);
+  border-radius: 18px;
+  border: 1px solid var(--transparent-grey);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.9);
+  max-width: 420px;
+  width: 100%;
+  padding: 2.5rem 2.3rem;
+  margin: 2rem auto;
+}
+
+/* Logo petit centrat */
+.auth-logo {
+  display: block;
+  height: 40px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Títol */
+.auth-title {
+  color: var(--pure-white);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+/* Labels */
+.auth-label {
+  color: var(--dirty-white);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+/* Inputs */
+.auth-input {
+  background: transparent;
+  border-radius: 12px;
+  border: 2px solid var(--input);
+  color: var(--pure-white);
+  padding: 0.7rem 0.9rem;
+}
+
+.auth-input::placeholder {
+  color: #9c7cff;
+}
+
+/* Botó morat "Sign in with Shop" */
+.auth-btn-primary {
+  background: var(--rekom);
+  border-radius: 999px;
+  border: none;
+  color: var(--pure-white);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  padding: 0.9rem 1.25rem;
+  transition: background 0.25s ease, transform 0.15s ease, box-shadow 0.25s ease;
+}
+
+.auth-btn-primary:hover {
+  background: var(--soft-purple);
+  box-shadow: 0 10px 30px rgba(93, 0, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Botó "Continue" */
+.auth-btn-secondary {
+  background: #111111;
+  border-radius: 999px;
+  border: 1px solid var(--transparent-grey);
+  color: var(--dirty-white);
+  font-weight: 600;
+  padding: 0.9rem 1.25rem;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.auth-btn-secondary:hover {
+  background: #181818;
+  border-color: var(--rekom);
+  color: var(--pure-white);
+}
+
+/* Divider "or" */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #888;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--transparent-grey);
+}
+
+.auth-divider span {
+  flex: 0 0 auto;
+}
+
+/* Links dins del text del formulari */
+.account-page a {
+  color: var(--rekom);
+  text-decoration: none;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.account-page a:hover {
+  color: var(--soft-purple);
+  opacity: 0.85;
+}
+
+/* RETURNS & EXCHANGES PAGE */
+.returns-page {
+  background: #000; /* fons negre com la resta del site */
+  min-height: calc(100vh - 140px);
+}
+
+/* Targeta central */
+.returns-card {
+  background: rgba(5, 5, 5, 0.98);
+  border-radius: 18px;
+  border: 1px solid var(--transparent-grey);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.9);
+  max-width: 760px;
+  width: 100%;
+  padding: 2.5rem 2.3rem;
+  margin: 2rem auto;
+}
+
+/* Títol */
+.returns-title {
+  color: var(--pure-white);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Labels */
+.returns-label {
+  color: var(--dirty-white);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* Inputs & selects */
+.returns-input,
+.returns-select,
+.returns-textarea {
+  background: transparent;
+  border-radius: 12px;
+  border: 2px solid var(--input);
+  color: var(--pure-white);
+  padding: 0.7rem 0.9rem;
+}
+
+.returns-input::placeholder,
+.returns-textarea::placeholder {
+  color: #9c7cff;
+}
+
+/* Select */
+.returns-select {
+  cursor: pointer;
+}
+
+/* Textarea */
+.returns-textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* Checkboxes & radios */
+.returns-checkbox,
+.returns-radio {
+  border-radius: 4px;
+  border-color: var(--input);
+  background-color: transparent;
+}
+
+.returns-checkbox:checked,
+.returns-radio:checked {
+  background-color: var(--rekom);
+  border-color: var(--rekom);
+}
+
+/* Enllaços dins del text */
+.returns-page a {
+  color: var(--rekom);
+  text-decoration: none;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.returns-page a:hover {
+  color: var(--soft-purple);
+  opacity: 0.85;
+}
+
+/* Botó principal */
+.returns-btn {
+  background: var(--rekom);
+  border-radius: 999px;
+  border: none;
+  color: var(--pure-white);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.25rem;
+  transition: background 0.25s ease, transform 0.15s ease, box-shadow 0.25s ease;
+}
+
+.returns-btn:hover {
+  background: var(--soft-purple);
+  box-shadow: 0 10px 30px rgba(93, 0, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 575.98px) {
+  .returns-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* === ORDER TRACKING === */
+.order-tracking-page {
+  background: #000;
+  min-height: calc(100vh - 140px);
+}
+
+/* Targeta central */
+.order-card {
+  background: rgba(5, 5, 5, 0.98);
+  border-radius: 18px;
+  border: 1px solid var(--transparent-grey);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.9);
+  max-width: 560px;
+  width: 100%;
+  padding: 2.5rem 2.3rem;
+  margin: 2rem auto;
+}
+
+/* Títol */
+.order-title {
+  color: var(--pure-white);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Labels */
+.order-label {
+  color: var(--dirty-white);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* Inputs */
+.order-input {
+  background: transparent;
+  border-radius: 12px;
+  border: 2px solid var(--input);
+  color: var(--pure-white);
+  padding: 0.7rem 0.9rem;
+}
+
+.order-input::placeholder {
+  color: #9c7cff;
+}
+
+/* Botó principal */
+.order-btn {
+  background: var(--rekom);
+  border-radius: 999px;
+  border: none;
+  color: var(--pure-white);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.25rem;
+  transition: background 0.25s ease, transform 0.15s ease, box-shadow 0.25s ease;
+}
+
+.order-btn:hover {
+  background: var(--soft-purple);
+  box-shadow: 0 10px 30px rgba(93, 0, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+/* Bloc d’estat de la comanda */
+.order-status-box {
+  border-radius: 14px;
+  border: 1px solid var(--transparent-grey);
+  background: #050505;
+  padding: 1rem 1.25rem;
+}
+
+/* Enllaços (si n’hi poses dins) */
+.order-tracking-page a {
+  color: var(--rekom);
+  text-decoration: none;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.order-tracking-page a:hover {
+  color: var(--soft-purple);
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 575.98px) {
+  .order-card {
+    padding: 2rem 1.5rem;
+  }
+}
