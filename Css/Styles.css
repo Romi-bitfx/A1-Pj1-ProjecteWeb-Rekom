@@ -293,7 +293,6 @@ body {
 }
 
 /* === POPUP DESCOMPTE 10% === */
-
 /* Logo popup */
 .popup-logo {
   display: block;
@@ -354,7 +353,7 @@ body {
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.9);
 }
 
-/* "Paso de descuentos" (botó de tancar) */
+/* Botó de tancar */
 .discount-close {
   color: var(--pure-white);
   transition: color 0.25s ease;
@@ -407,7 +406,6 @@ body {
 }
 
 /* === CONTACT === */
-
 .contact-form {
   background: var(--pure-black);
   border-radius: 18px;
@@ -470,7 +468,6 @@ body {
 }
 
 /* === ABOUT === */
-
 .about-rekom {
   background: var(--pure-black);
   padding-bottom: 3rem;
@@ -595,8 +592,8 @@ body {
 
 /* === ACCOUNT === */
 .account-page {
-  background: #000; /* assegurem fons negre pur */
-  min-height: calc(100vh - 140px); /* espai per navbar + footer */
+  background: #000; 
+  min-height: calc(100vh - 140px); 
 }
 
 /* Targeta central */
@@ -722,7 +719,7 @@ body {
 
 /* RETURNS & EXCHANGES PAGE */
 .returns-page {
-  background: #000; /* fons negre com la resta del site */
+  background: #000; 
   min-height: calc(100vh - 140px);
 }
 
