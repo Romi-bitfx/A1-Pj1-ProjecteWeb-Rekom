@@ -415,6 +415,12 @@ body {
   border: 1px solid var(--transparent-grey);
 }
 
+.contact-title {
+  color: var(--pure-white);
+  font-weight: 700; 
+  letter-spacing: 0.02em;
+}
+
 .contact-input {
   background: transparent;
   border-radius: 10px;
@@ -460,5 +466,90 @@ body {
 @media (max-width: 575.98px) {
   .contact-form {
     padding: 1.8rem 1.2rem;
+  }
+}
+
+/* === ABOUT === */
+
+.about-rekom {
+  background: var(--pure-black);
+  padding-bottom: 3rem;
+}
+
+.about-rekom h1 {
+  color: var(--pure-white);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.about-rekom h2 {
+  color: var(--soft-purple);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Text */
+.about-text {
+  color: var(--dirty-white);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.about-text strong {
+  color: var(--soft-purple);
+}
+
+/* --- FOTOS --- */
+.about-images {
+  background: var(--pure-black);
+  padding-bottom: 4rem;
+}
+
+/* Foto principal */
+.about-photo-wrapper {
+  background: var(--transparent-purple);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(128, 67, 255, 0.35);
+  box-shadow: 0 0 30px rgba(93,0,255,0.15);
+}
+
+.about-main-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: saturate(1.10) contrast(1.05);
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.about-photo-wrapper:hover .about-main-photo {
+  transform: scale(1.015);
+  filter: saturate(1.20) contrast(1.1);
+}
+
+/* --- Firma --- */
+.about-signature-wrapper {
+  text-align: left;
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+
+.about-signature {
+  max-width: 240px;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 6px rgba(98, 0, 255, 0.4));
+  transition: opacity 0.3s ease;
+}
+
+.about-signature:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-signature-wrapper {
+    text-align: left;
+    padding-left: 0.5rem;
   }
 }
