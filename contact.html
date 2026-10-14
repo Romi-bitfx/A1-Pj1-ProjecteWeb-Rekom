@@ -2,246 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>REKOM™ — Contact</title>
-  <meta name="description" content="REKOM™ — Urban handmade hoodies. Artisan, premium and limited-edition streetwear crafted in Reus. Extreme quality, underground aesthetics and long-lasting pieces built to follow you forever.">
-  <meta name="keywords" content="REKOM, streetwear, handmade hoodies, urban fashion, premium clothing, limited edition, artisanal apparel, Reus, underground aesthetic, luxury streetwear">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — REKOM™</title>
+  <meta name="description" content="Any doubt, collab or order issue? Drop REKOM™ a message.">
   <meta name="author" content="REKOM™">
-
-  <!-- Indexació -->
+  <meta name="theme-color" content="#050507">
   <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow">
-  <meta name="bingbot" content="index, follow">
 
   <link rel="icon" href="assets/img/favicon.ico">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Styles després de Boostrap (per sobreescriure correctament) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Model-Viewer (no passa res si aquesta pàgina no el fa servir) -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ClothingStore",
-    "name": "REKOM",
-    "image": "",
-    "@id": "",
-    "url": "https://www.rekom.es/home",
-    "telephone": "+34 977207089",
-    "priceRange": "€100 - €160",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Carrer del Duc, 7, Ciutat Vella",
-      "addressLocality": "Barcelona",
-      "postalCode": "08002",
-      "addressCountry": "ES"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.3841269,
-      "longitude": 2.1732635
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "11:00",
-      "closes": "21:00"
-    },
-    "sameAs": [
-      "https://x.com/RekomWear",
-      "https://www.instagram.com/rekom_wear/",
-      "https://www.youtube.com/@Rekom_Wear",
-      "https://www.tiktok.com/@rekom_wear?lang=es-419"
-    ]
-  }
-  </script>
 </head>
 
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-2">
-    <div class="container d-flex justify-content-between align-items-center">
-      <!-- Menú hamburguesa -->
-      <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open's menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Logo -->
-      <a class="navbar-brand m-0 position-absolute start-50 translate-middle-x" href="index.html">
-        <img class="brand-mark" src="assets/img/logo.png" alt="REKOM">
-      </a>
-
-      <!-- Icones -->
-      <div class="d-flex align-items-center gap-3 order-1">
-
-        <button class="nav-icon btn p-0" id="open-search" aria-label="Search" type="button">
-          <i class="bi bi-search"></i>
-        </button>
-
-        <a class="nav-icon" href="account.html" aria-label="Account">
-          <i class="bi bi-person"></i>
-        </a>
-
-        <a class="nav-icon" href="#" aria-label="Cart">
-          <i class="bi bi-cart3"></i>
-        </a>
-      </div>
-
-      <!-- Enllaços de navegació -->
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav me-auto mt-3 mt-lg-0 gap-lg-3">
-          <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
-          <li class="nav-item"><a class="nav-link" href="about_us.html">ABOUT US</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- BARRA DE CERCA -->
-  <div id="search-bar" class="search-wrapper d-none">
-    <div class="container d-flex justify-content-center">
-      <input type="text" class="form-control search-input" placeholder="Search...">
-    </div>
-  </div>
-
-  <!-- CONTINGUT PRINCIPAL DE LA PÀGINA -->
-  <main class="py-5">
+<body data-page="contact">
+<main>
+  
+  <section class="page-hero">
     <div class="container">
-
-      <h1 class="display-4 text-center mb-3 contact-title">Contact</h1>
-      <p class="text-center text-white-50 mb-5">
-        Any doubt, collab or order issue? Drop us a message.
-      </p>
-
-      <form class="contact-form mx-auto" action="php/contact_send.php" method="POST" style="max-width: 900px;">
-        <div class="row g-3">
-
-          <!-- Nom -->
-          <div class="col-12 col-md-6">
-            <label for="name" class="form-label small text-uppercase text-white-50">Name</label>
-            <input type="text" id="name" name="name" class="form-control contact-input" placeholder="Your name" required>
-          </div>
-
-          <!-- Email -->
-          <div class="col-12 col-md-6">
-            <label for="email" class="form-label small text-uppercase text-white-50">Email</label>
-            <input type="email" id="email" name="email" class="form-control contact-input" placeholder="you@mail.com" required>
-          </div>
-
-          <!-- Telèfon -->
-          <div class="col-12">
-            <label for="phone" class="form-label small text-uppercase text-white-50">Phone (optional)</label>
-            <input type="tel" id="phone" name="phone" class="form-control contact-input" placeholder="+34 600 000 000">
-          </div>
-
-          <!-- Missatge -->
-          <div class="col-12">
-            <label for="message" class="form-label small text-uppercase text-white-50">Message</label>
-            <textarea id="message" name="message" rows="5" class="form-control contact-input" placeholder="Write your message..." required></textarea>
-          </div>
-
-          <!-- Botó -->
-          <div class="col-12 text-center mt-2">
-            <button type="submit" class="btn contact-btn px-5">
-              SEND MESSAGE
-            </button>
-          </div>
-
-        </div>
-      </form>
-
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> <span aria-current="page">Contact</span></nav>
+      <span class="eyebrow mt-3">Talk to us</span>
+      <h1 data-split><span class="split-line"><span>Say</span></span><span class="split-line"><span><span class="outline-text">hi.</span></span></span></h1>
+      <p class="lead reveal">Any doubt, collab or order issue? Drop us a message — a real human from the workshop answers every one.</p>
     </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer pt-5 pb-4" id="contacte">
-    <div class="container text-center">
-
-      <img src="assets/img/logo.png" alt="Logotip REKOM" style="height:28px" onerror="this.remove()">
-
-      <div class="d-flex justify-content-center gap-4 mt-3 social">
-        <a href="https://x.com/RekomWear" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.instagram.com/rekom_wear/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.youtube.com/@Rekom_Wear" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.tiktok.com/@rekom_wear?lang=es-419" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-      </div>
-
-      <!-- COLUMNES CENTRADES -->
-      <div class="row justify-content-center mt-4 small text-uppercase text-center">
-        <div class="col-auto">
-          <ul class="list-unstyled m-0">
-            <li class="mb-2"><a href="legal_notice.html">Legal Notice</a></li>
-            <li class="mb-2"><a href="privacy_policy.html">Privacy Policy</a></li>
-            <li class="mb-2"><a href="terms_of_service.html">Terms of Service</a></li>
-            <li class="mb-2"><a href="returns_exchanges.html">Returns &amp; Exchanges</a></li>
-          </ul>
+    <div class="ghost" aria-hidden="true">HELLO</div>
+  </section>
+  <section class="section">
+    <div class="container contact-layout">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <span class="label">Email</span>
+          <a class="big" href="mailto:rekomwear@gmail.com">rekomwear@gmail.com</a>
         </div>
-
-        <div class="col-auto ms-4">
-          <ul class="list-unstyled m-0">
-            <li class="mb-2"><a href="order_tracking.html">Order Tracking</a></li>
-            <li class="mb-2"><a href="faqs.html">FAQs</a></li>
-            <li class="mb-2"><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="contact-item">
+          <span class="label">Phone</span>
+          <a class="big" href="tel:+34977207089">+34 977 207 089</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">Studio</span>
+          <span class="big">Carrer del Duc, 7<br>08002 Barcelona</span>
+          <span class="muted">Mon–Sat · 11:00–21:00</span>
+        </div>
+        <div class="contact-item" style="border:0">
+          <span class="label">Follow</span>
+          <div class="socials" style="margin-left:-10px">
+            <a class="icon-btn" href="https://www.instagram.com/rekom_wear/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a class="icon-btn" href="https://www.tiktok.com/@rekom_wear" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a class="icon-btn" href="https://x.com/RekomWear" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+            <a class="icon-btn" href="https://www.youtube.com/@Rekom_Wear" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
         </div>
       </div>
 
-      <div class="mt-4">
-        <span class="text-white-50 d-block text-center">© 2025 REKOM™</span>
+      <div class="card glow reveal reveal-d1">
+        <form class="form-grid" data-demo data-success-title="Message sent." data-success="Thanks for reaching out. We usually answer within 24–48 hours.">
+          <div class="field">
+            <label for="name">Name</label>
+            <input class="input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" name="email" placeholder="you@mail.com" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input class="input" type="tel" id="phone" name="phone" placeholder="+34 600 000 000" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select class="select" id="topic" name="topic">
+              <option>Order question</option>
+              <option>Sizing help</option>
+              <option>Collab / press</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea class="textarea" id="message" name="message" placeholder="Write your message..." required></textarea>
+          </div>
+          <div class="full">
+            <button class="btn btn-lg btn-block" type="submit">Send message <i class="bi bi-send"></i></button>
+          </div>
+        </form>
       </div>
-
     </div>
-  </footer>
+  </section>
+</main>
 
-  <!-- BACKDROP DEL CARRET -->
-  <div id="cart-backdrop" class="cart-backdrop d-none"></div>
-
-  <!-- CARRET LATERAL -->
-  <aside id="cart-panel" class="cart-panel">
-    <div class="cart-header d-flex justify-content-between align-items-center">
-      <h5 class="m-0">Cart</h5>
-      <button id="cart-close" class="btn btn-sm btn-outline-light px-2 py-1">X</button>
-    </div>
-
-    <div class="cart-body mt-3">
-      <ul id="cart-items" class="list-unstyled m-0"></ul>
-    </div>
-
-    <div class="cart-footer mt-3">
-      <div class="d-flex justify-content-between mb-2">
-        <span>Total:</span>
-        <strong id="cart-total">0.00 €</strong>
-      </div>
-      <button class="btn btn-light w-100">Checkout</button>
-    </div>
-  </aside>
-
-  <!-- JS Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Barra de cerca -->
-  <script src="js/search.js"></script>
-
-  <!-- Carret -->
-  <script src="js/cart.js"></script>
-
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

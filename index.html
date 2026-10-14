@@ -2,30 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>REKOM™ — Home</title>
-  <meta name="description" content="REKOM™ — Urban handmade hoodies. Artisan, premium and limited-edition streetwear crafted in Reus. Extreme quality, underground aesthetics and long-lasting pieces built to follow you forever.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>REKOM™ — Urban Handmade Hoodies</title>
+  <meta name="description" content="REKOM™ — Urban handmade hoodies. Artisan, premium and limited-edition streetwear crafted in Reus. Drop 001 is live: four pieces, edition of 50, no restocks.">
   <meta name="keywords" content="REKOM, streetwear, handmade hoodies, urban fashion, premium clothing, limited edition, artisanal apparel, Reus, underground aesthetic, luxury streetwear">
   <meta name="author" content="REKOM™">
-
-  <!-- Indexació -->
+  <meta name="theme-color" content="#050507">
   <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow">
-  <meta name="bingbot" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="REKOM™ — Urban Handmade Hoodies">
+  <meta property="og:description" content="Drop 001 is live. Four pieces, edition of 50, handmade in Reus. No restocks.">
+  <meta property="og:image" content="assets/img/lookbook/banner-1200.webp">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="assets/img/favicon.ico">
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Styles després de Boostrap (per sobreescriure correctament) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="preload" href="assets/3d/logo.glb" as="fetch" crossorigin>
 
-  <!-- Model-Viewer -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -33,9 +32,8 @@
     "@context": "https://schema.org",
     "@type": "ClothingStore",
     "name": "REKOM",
-    "image": "",
-    "@id": "",
-    "url": "https://www.rekom.es/home",
+    "url": "https://www.rekom.es/",
+    "logo": "assets/img/logo.png",
     "telephone": "+34 977207089",
     "priceRange": "€100 - €160",
     "address": {
@@ -45,21 +43,10 @@
       "postalCode": "08002",
       "addressCountry": "ES"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.3841269,
-      "longitude": 2.1732635
-    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.3841269, "longitude": 2.1732635 },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
       "opens": "11:00",
       "closes": "21:00"
     },
@@ -67,327 +54,255 @@
       "https://x.com/RekomWear",
       "https://www.instagram.com/rekom_wear/",
       "https://www.youtube.com/@Rekom_Wear",
-      "https://www.tiktok.com/@rekom_wear?lang=es-419"
-    ] 
+      "https://www.tiktok.com/@rekom_wear"
+    ]
   }
   </script>
-  
 </head>
 
-<body>
-<!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-2">
-    <div class="container d-flex justify-content-between align-items-center">
-      <!-- Menú hamburguesa -->
-      <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open's menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body data-page="home" class="has-hero">
 
-      <!-- Logo -->
-      <a class="navbar-brand m-0 position-absolute start-50 translate-middle-x" href="index.html">
-        <img class="brand-mark" src="assets/img/logo.png" alt="REKOM">
-      </a>
+<main>
 
-      <!-- Icones -->
-      <div class="d-flex align-items-center gap-3 order-1">
+  <!-- HERO + LOGO 3D -->
+  <section class="hero">
+    <div class="hero-word" aria-hidden="true" id="hero-word">REKOM</div>
 
-        <button class="nav-icon btn p-0" id="open-search" aria-label="Search" type="button">
-          <i class="bi bi-search"></i>
-        </button>
-
-        <a class="nav-icon" href="account.html" aria-label="Account"><i class="bi bi-person"></i></a>
-        
-        <a class="nav-icon" href="#" aria-label="Cart"><i class="bi bi-cart3"></i></a>
-        
-      </div>
-
-      <!-- Enllaços de navegació -->
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav me-auto mt-3 mt-lg-0 gap-lg-3">
-          <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-          <li class="nav-item"><a class="nav-link" href="about_us.html">ABOUT US</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- BARRA DE CERCA -->
-  <div id="search-bar" class="search-wrapper d-none">
-    <div class="container d-flex justify-content-center">
-      <input type="text" class="form-control search-input" placeholder="Search...">
-    </div>
-  </div>
-
-<!-- HERO -->
-  <section id="top" class="hero text-center text-white d-flex align-items-center">
-
-    <!-- FONS 3D + LOGO 3D -->
-    <div class="hero-3d" aria-hidden="true">
+    <div class="hero-3d">
       <model-viewer
         id="logo3d"
         src="assets/3d/logo.glb"
-        alt="3D Logo REKOM"
+        alt="REKOM 3D logo — drag to rotate"
         camera-controls
+        disable-zoom
+        disable-pan
         auto-rotate
-        camera-orbit="0deg 90deg 0,5m"
-        field-of-view="30deg"
-        skybox-image="assets/img/hero-bg.jpg"
+        auto-rotate-delay="0"
+        rotation-per-second="28deg"
+        interaction-prompt="none"
+        touch-action="pan-y"
         environment-image="assets/3d/entorn.hdr"
-        exposure="1.0"
-        environment-intensity="1.2"
-        shadow-intensity="0.3"
-        shadow-softness="0.4"
-        skybox-height="-1"
-        style="--poster-color: transparent; background: transparent;">
+        exposure="1.15"
+        shadow-intensity="0"
+        camera-orbit="0deg 80deg 165%"
+        field-of-view="30deg">
       </model-viewer>
     </div>
 
-    <!-- CONTINGUT HERO --> 
-    <div class="container py-5 hero-content">
-      <h1 class="display-4 mb-3">Urban handmade hoodies</h1>
-      <p class="lead mb-4">Premium design, urban attitude & top-quality materials.</p>
-      <div class="d-flex justify-content-center gap-3">
-        <a href="#productes" class="btn btn-light btn-lg px-4">Buy now</a>
-        <a href="about_us.html" class="btn btn-outline-light btn-lg px-4">Know more</a>
+    <div class="container hero-meta">
+      <span class="mono live">Drop 001 — Live now</span>
+      <span class="mono hide-sm">41.15°N · 1.10°E — Reus</span>
+      <span class="mono hide-sm">Edition of 50</span>
+    </div>
+
+    <div class="container hero-content">
+      <h1>
+        <span class="line"><span>Urban</span></span>
+        <span class="line"><span class="text-glow">Handmade</span></span>
+        <span class="line"><span>Hoodies</span></span>
+      </h1>
+      <div class="hero-side">
+        <p class="lead">Premium design, urban attitude &amp; top-quality materials. Cut, printed and finished by hand — in limited runs that never come back.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-lg" href="#drop-001">Shop Drop 001 <i class="bi bi-arrow-right"></i></a>
+          <a class="btn btn-lg btn-ghost" href="about_us.html">Our story</a>
+        </div>
       </div>
     </div>
+
+    <div class="scroll-cue" aria-hidden="true"></div>
   </section>
 
-<!-- PRODUCTES -->
-  <section id="productes" class="py-5">
+  <!-- BANDA -->
+  <div class="band" aria-hidden="true">
+    <div class="marquee">
+      <span>Handmade in Reus <span class="star">✦</span> <span class="o">Limited edition</span> <span class="star">✦</span> No restocks <span class="star">✦</span> <span class="o">Underground premium</span> <span class="star">✦</span></span>
+      <span>Handmade in Reus <span class="star">✦</span> <span class="o">Limited edition</span> <span class="star">✦</span> No restocks <span class="star">✦</span> <span class="o">Underground premium</span> <span class="star">✦</span></span>
+    </div>
+  </div>
+
+  <!-- DROP 001 -->
+  <section class="section" id="drop-001">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-end mb-3">
-        <h2 class="m-0">Hoodies</h2>
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Drop 001 — 4 pieces</span>
+          <h2 data-split>
+            <span class="split-line"><span>The first</span></span>
+            <span class="split-line"><span class="outline-text">four.</span></span>
+          </h2>
+        </div>
+        <div class="reveal">
+          <p class="lead">Four hoodies. Fifty units each. Every piece numbered, every print pulled by hand. Hover to see the back — that's where the story is.</p>
+          <a class="link-arrow mt-3" href="shop.html">View the full shop <i class="bi bi-arrow-right"></i></a>
+        </div>
       </div>
+      <div class="grid-products" data-products="all"></div>
+    </div>
+  </section>
 
-      <div class="row g-3">
-        <!-- DESUADORA UMBRA -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card h-100">
-            <div class="media" tabindex="0">
-              <img src="assets/img/hoodies/Umbra_Front.png" class="front" alt="Umbra Hoodie - front view">
-              <img src="assets/img/hoodies/Umbra_Back.png"  class="back"  alt="Umbra Hoodie - back view">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Umbra</h5>
-              <p class="card-text price">119,95 €</p>
+  <!-- LOOKBOOK -->
+  <section class="lookbook" aria-label="Lookbook">
+    <div class="lookbook-img" data-parallax="0.8">
+      <img src="assets/img/lookbook/banner-2400.webp"
+           srcset="assets/img/lookbook/banner-1200.webp 1200w, assets/img/lookbook/banner-2400.webp 2400w"
+           sizes="100vw" alt="Rider doing a wheelie in an urban street with the REKOM wordmark in purple" loading="lazy">
+    </div>
+    <div class="container lookbook-content">
+      <span class="eyebrow">Manifesto</span>
+      <h2 data-split class="mt-2">
+        <span class="split-line"><span>Not everyone</span></span>
+        <span class="split-line"><span>is meant to</span></span>
+        <span class="split-line"><span class="text-glow">fit in.</span></span>
+      </h2>
+      <p class="lead reveal">We design for the ones who walk against the current — identity over trends, meaning over noise.</p>
+      <a class="btn btn-light btn-lg reveal" href="about_us.html">Read the manifesto <i class="bi bi-arrow-up-right"></i></a>
+    </div>
+  </section>
 
-                <div class="size-buttons d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="S - M">S - M</button>
-                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="L - XL">L - XL</button>
-                </div>
+  <div class="band purple reverse" aria-hidden="true">
+    <div class="marquee">
+      <span>Drop 001 live <span class="star">✦</span> Umbra <span class="star">✦</span> Venom <span class="star">✦</span> Eclipse <span class="star">✦</span> Void <span class="star">✦</span></span>
+      <span>Drop 001 live <span class="star">✦</span> Umbra <span class="star">✦</span> Venom <span class="star">✦</span> Eclipse <span class="star">✦</span> Void <span class="star">✦</span></span>
+    </div>
+  </div>
 
-                <a href="#" class="btn btn-outline-light w-100 add-to-cart" data-product="Umbra" data-price="119.95">
-                  Add to cart
-                </a>
-            </div>
-          </div>
+  <!-- SPOTLIGHT -->
+  <section class="section">
+    <div class="container spotlight">
+      <div class="spot-media reveal" id="spot">
+        <div class="spot-tag"><span>R—001 / Umbra</span><span data-spot-label>Back</span></div>
+        <img src="assets/img/products/umbra-front-1400.webp" data-side="front" class="is-hidden" alt="Umbra hoodie — front" loading="lazy" width="1400" height="1400">
+        <img src="assets/img/products/umbra-back-1400.webp" data-side="back" alt="Umbra hoodie — back with ultraviolet REKOM print" loading="lazy" width="1400" height="1400">
+        <div class="spot-toggle" role="group" aria-label="View">
+          <button type="button" data-spot="front">Front</button>
+          <button type="button" data-spot="back" class="active">Back</button>
         </div>
-
-
-        <!-- DESUADORA VENOM -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card h-100">
-            <div class="media" tabindex="0">
-              <img src="assets/img/hoodies/Venom_Front.png" class="front" alt="Venom Hoodie - front view">
-              <img src="assets/img/hoodies/Venom_Back.png"  class="back"  alt="Venom Hoodie - back view">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Venom</h5>
-              <p class="card-text price">119,95 €</p>
-
-                <div class="size-buttons d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="S - M">S - M</button>
-                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="L - XL">L - XL</button>
-                </div>
-
-                <a href="#" class="btn btn-outline-light w-100 add-to-cart" data-product="Venom" data-price="119.95">
-                  Add to cart
-                </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- DESUADORA ECLIPSE -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card h-100">
-            <div class="media" tabindex="0">
-              <img src="assets/img/hoodies/Eclipse_Front.png" class="front" alt="Eclipse Hoodie - front view">
-              <img src="assets/img/hoodies/Eclipse_Back.png"  class="back"  alt="Eclipse Hoodie - back view">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Eclipse</h5>
-              <p class="card-text price">119,95 €</p>
-
-                <div class="size-buttons d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="S - M">S - M</button>
-                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="L - XL">L - XL</button>
-                </div>
-
-                <a href="#" class="btn btn-outline-light w-100 add-to-cart" data-product="Eclipse" data-price="119.95">
-                  Add to cart
-                </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- DESUADORA VOID -->
-        <div class="col-12 col-sm-6 col-lg-3">
-          <div class="card product-card h-100">
-            <div class="media" tabindex="0">
-              <img src="assets/img/hoodies/Void_Front.png" class="front" alt="Void Hoodie - front view">
-              <img src="assets/img/hoodies/Void_Back.png"  class="back"  alt="Void Hoodie - back view">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Void</h5>
-              <p class="card-text price">119,95 €</p>
-
-                <div class="size-buttons d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="S - M">S - M</button>
-                  <button class="btn btn-sm btn-outline-light flex-fill size-btn" data-size="L - XL">L - XL</button>
-                </div>
-
-                <a href="#" class="btn btn-outline-light w-100 add-to-cart" data-product="Void" data-price="119.95">
-                  Add to cart
-                </a>
-            </div>
-          </div>
+      </div>
+      <div class="spot-info reveal reveal-d1">
+        <span class="eyebrow">Spotlight — Bestseller</span>
+        <h2 class="mt-2">Umbra</h2>
+        <p class="tagline">The shadow you wear.</p>
+        <p class="desc">Total black, zero noise. A single R on the chest — and an ultraviolet REKOM wordmark hand-printed across the back. The piece that started it all.</p>
+        <ul class="spec-list">
+          <li><span>Colorway</span><span>Jet Black / Ultraviolet</span></li>
+          <li><span>Fit</span><span>Relaxed oversized</span></li>
+          <li><span>Sizes</span><span>S–M · L–XL</span></li>
+          <li><span>Made in</span><span>Reus, Spain</span></li>
+        </ul>
+        <div class="spot-actions">
+          <a class="btn btn-lg" href="product.html?id=umbra">Shop Umbra — 119,95 € <i class="bi bi-arrow-right"></i></a>
+          <a class="link-arrow" href="shop.html">All pieces <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-<!-- FOOTER -->
-  <footer class="footer pt-5 pb-4" id="contacte">
-    <div class="container text-center">
-
-      <img src="assets/img/logo.png" alt="Logotip REKOM" style="height:28px" onerror="this.remove()">
-
-      <div class="d-flex justify-content-center gap-4 mt-3 social">
-        <a href="https://x.com/RekomWear" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.instagram.com/rekom_wear/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.youtube.com/@Rekom_Wear" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-        <a href="https://www.tiktok.com/@rekom_wear?lang=es-419" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-      </div>
-
-      <!-- COLUMNES CENTRADES -->
-      <div class="row justify-content-center mt-4 small text-uppercase text-center">
-        <div class="col-auto">
-          <ul class="list-unstyled m-0">
-            <li class="mb-2"><a href="legal_notice.html">Legal Notice</a></li>
-            <li class="mb-2"><a href="privacy_policy.html">Privacy Policy</a></li>
-            <li class="mb-2"><a href="terms_of_service.html">Terms of Service</a></li>
-            <li class="mb-2"><a href="returns_exchanges.html">Returns &amp; Exchanges</a></li>
-          </ul>
+  <!-- VALORS -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="values">
+        <div class="value reveal">
+          <span class="num">/01</span>
+          <span class="big" data-count="50">0<small>pcs</small></span>
+          <h3>Per piece. Period.</h3>
+          <p>Every design is a numbered edition of fifty. No second batch, no "back by popular demand".</p>
         </div>
-
-        <div class="col-auto ms-4">
-          <ul class="list-unstyled m-0">
-            <li class="mb-2"><a href="order_tracking.html">Order Tracking</a></li>
-            <li class="mb-2"><a href="faqs.html">FAQs</a></li>
-            <li class="mb-2"><a href="contact.html">Contact</a></li>
-          </ul>
+        <div class="value reveal reveal-d1">
+          <span class="num">/02</span>
+          <span class="big" data-count="100">0<small>%</small></span>
+          <h3>Handmade in Reus</h3>
+          <p>Cut, printed and finished in our own workshop. No outsourcing. No shortcuts.</p>
+        </div>
+        <div class="value reveal reveal-d2">
+          <span class="num">/03</span>
+          <span class="big" data-count="0">0<small>restocks</small></span>
+          <h3>Once it's gone</h3>
+          <p>If a design ever returns, it comes back reworked — never as a simple reprint.</p>
+        </div>
+        <div class="value reveal reveal-d3">
+          <span class="num">/04</span>
+          <span class="big" data-count="14">0<small>days</small></span>
+          <h3>Easy returns</h3>
+          <p>Wrong size? Exchanges and returns within 14 days. Built to last years, not seasons.</p>
         </div>
       </div>
-
-      <div class="mt-4">
-        <span class="text-white-50 d-block text-center">© 2025 REKOM™</span>
-      </div>
-
     </div>
-  </footer>
+  </section>
 
-<!-- BACKDROP DEL CARRET -->
-<div id="cart-backdrop" class="cart-backdrop d-none"></div>
-
-<!-- CARRET -->
-<aside id="cart-panel" class="cart-panel">
-  <div class="cart-header d-flex justify-content-between align-items-center">
-    <h5 class="m-0">Cart</h5>
-    <button id="cart-close" class="btn btn-sm btn-outline-light px-2 py-1">X</button>
-  </div>
-
-  <div class="cart-body mt-3">
-    <ul id="cart-items" class="list-unstyled m-0"></ul>
-  </div>
-
-  <div class="cart-footer mt-3">
-    <div class="d-flex justify-content-between mb-2">
-      <span>Total:</span>
-      <strong id="cart-total">0.00 €</strong>
-    </div>
-    <button class="btn btn-light w-100">Checkout</button>
-  </div>
-</aside>
-
-<!-- POPUP DESCOMPTE 10% -->
-<div id="discount-popup" class="discount-overlay d-none">
-
-  <div class="discount-modal">
-    <div class="row g-0 h-100">
-
-      <!-- FOTO -->
-      <div class="col-12 col-md-5 discount-photo p-0">
-        <img src="assets/img/popup_photo.jpg" alt="Descompte 10% REKOM" class="img-fluid w-100 h-100 object-fit-cover">
-      </div>
-
-      <!-- Columna FORMULARI -->
-      <div class="col-12 col-md-7 discount-content d-flex flex-column justify-content-center text-white text-center p-4 p-md-5">
-
-        <img src="assets/img/logo.png" alt="REKOM" class="popup-logo mb-3">
-
-        <p class="mb-1 small text-uppercase">Steal us</p>
-
-        <h2 class="fw-bold mb-2">
-          <span style="letter-spacing:0.04em;">10% IN YOUR 1st ORDER</span>
-        </h2>
-
-        <p class="mb-4 small text-uppercase text-white-50">
-          There are no tricks, there are others for that :)
-        </p>
-
-        <form action="php/send_discount.php" method="POST">
-          <div class="mb-3 text-start">
-            <input type="text" name="name" class="form-control discount-input" placeholder="Name" required>
+  <!-- PROPER DROP -->
+  <section class="section">
+    <div class="container">
+      <div class="next-drop reveal">
+        <div>
+          <span class="eyebrow">Next up</span>
+          <h2 class="mt-2">Drop 002<br><span class="outline-text">is loading.</span></h2>
+          <p class="lead mt-2">New silhouettes. Same rules. Subscribers get the link 24 hours before everyone else.</p>
+          <div class="countdown" data-countdown aria-label="Time until Drop 002">
+            <div><b data-d>00</b><span>Days</span></div>
+            <div><b data-h>00</b><span>Hours</span></div>
+            <div><b data-m>00</b><span>Min</span></div>
+            <div><b data-s>00</b><span>Sec</span></div>
           </div>
-
-          <div class="mb-3 text-start">
-            <input type="email" name="email" class="form-control discount-input" placeholder="Email" required>
-          </div>
-
-          <button type="submit" class="btn discount-btn w-100 mt-2">
-            GIVE ME MY DISCOUNT
-          </button>
-        </form>
-
-        <!-- TANCAR POPUP -->
-        <p class="mt-3 small discount-close"
-           role="button"
-           style="cursor:pointer;">
-          I'm not interested
-        </p>
-
+        </div>
+        <div>
+          <p class="mono muted">Early access list</p>
+          <form class="inline-form mt-2" data-demo data-success-title="You're on the list." data-success="We'll send your early access link 24 hours before Drop 002 goes live.">
+            <label class="sr-only" for="drop-email">Email</label>
+            <input id="drop-email" type="email" placeholder="your@email.com" autocomplete="email" required>
+            <button class="btn" type="submit">Notify me</button>
+          </form>
+          <p class="dim mt-2" style="font-size:.8rem">No spam. Only drops.</p>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- HISTÒRIA -->
+  <section class="section">
+    <div class="container story">
+      <div class="story-media reveal">
+        <img data-parallax="0.25" data-scale="1.15" src="assets/img/lookbook/alley-1200.webp"
+             srcset="assets/img/lookbook/alley-600.webp 600w, assets/img/lookbook/alley-1200.webp 1200w"
+             sizes="(max-width: 900px) 100vw, 45vw" alt="Hooded figure walking down a narrow stone alley at dusk" loading="lazy">
+        <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true">
+          <defs><path id="circle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+          <text><textPath href="#circle">Handmade in Reus ✦ Limited edition ✦ </textPath></text>
+        </svg>
+      </div>
+      <div class="reveal reveal-d1">
+        <span class="eyebrow">The story</span>
+        <blockquote>This is not just clothing. It's <em>attitude.</em> It's identity. It's REKOM™.</blockquote>
+        <p>REKOM was born from a simple truth: not everyone is meant to fit in. Our universe is built on urban rebellion, exclusivity and extreme quality — nothing leaves our workshop unless it feels intentional, powerful and unmistakably ours.</p>
+        <img class="signature" src="assets/img/signature.webp" alt="Founder's signature" loading="lazy" width="727" height="472">
+        <p class="mono dim">Founder — REKOM™</p>
+        <a class="link-arrow mt-3" href="about_us.html">Read our story <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
 
-<!-- Ajustos del model 3D -->
+  <!-- NEWSLETTER -->
+  <section class="section" style="border-top:1px solid var(--line)">
+    <div class="container newsletter">
+      <span class="eyebrow">Join the underground</span>
+      <h2 data-split>
+        <span class="split-line"><span>10% off.</span></span>
+        <span class="split-line"><span class="outline-text purple">First order.</span></span>
+      </h2>
+      <p class="lead">Early access to every drop, behind-the-scenes from the workshop and zero spam.</p>
+      <form class="inline-form" data-newsletter>
+        <label class="sr-only" for="nl-email">Email</label>
+        <input id="nl-email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+        <button class="btn" type="submit">Subscribe <i class="bi bi-arrow-right"></i></button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
 <script src="js/model3d.js" type="module"></script>
-
-<!-- Ajustos Popup -->
-<script src="js/popup.js"></script>
-
-<!-- Barra de cerca -->
-<script src="js/search.js"></script>
-
-<!-- Carret -->
-<script src="js/cart.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Wishlist — REKOM™</title>
+  <meta name="description" content="Your saved REKOM™ pieces.">
+  <meta name="author" content="REKOM™">
+  <meta name="theme-color" content="#050507">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body data-page="wishlist">
+<main>
+  
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> <span>/</span> <span aria-current="page">Wishlist</span></nav>
+      <span class="eyebrow mt-3">Saved pieces</span>
+      <h1 data-split><span class="split-line"><span>Wish</span></span><span class="split-line"><span><span class="outline-text">list.</span></span></span></h1>
+      <p class="lead reveal">The pieces you can't stop thinking about. Don't wait too long — editions of 50 don't last.</p>
+    </div>
+    <div class="ghost" aria-hidden="true">SAVED</div>
+  </section>
+  <section class="section-tight">
+    <div class="container">
+      <div class="grid-products" id="wish-grid"></div>
+      <div class="cart-empty" id="wish-empty" hidden>
+        <i class="bi bi-heart"></i>
+        <h3>Nothing saved yet</h3>
+        <p>Tap the heart on any piece to keep it here.</p>
+        <a class="btn" href="shop.html">Explore the drop <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/wishlist.js"></script>
+</body>
+</html>
